@@ -42,12 +42,13 @@
         opacity: 0;
     }
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
-	}15%{
+	}14%{
         transform:translateY(0);
-    }23%{
+    }22%{
         transform: translateY(-100vh);
     }
 	50% {
