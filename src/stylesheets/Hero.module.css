@@ -11,12 +11,12 @@
 
 .panel{
     width:100vw;
-    height:80vh;
+    height:100vh;
     background-color: #18191A;
     padding-top:5rem;
-    background: url('./6248147.jpg');
+    /*background: url('./6248147.jpg');
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:center;*/
 }
 
 .introText {
@@ -70,8 +70,9 @@
     opacity:0;
     margin-top:20vh;
     color:white; 
-    font-size:calc(4em + 1vmin);  
+    font-size:calc(6em + 1vmin);  
     font-family: 'K2D', sans-serif;
+    font-weight: 700;
     cursor:default;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -82,7 +83,7 @@
 .subHeader{
     opacity:0;
     color:white;
-    font-size:calc(1em + 1vmin);  
+    font-size:calc(1.5em + 1vmin);  
     cursor:default;
     user-select: none;
     -webkit-user-select: none; /* Safari */

@@ -24,8 +24,7 @@ const Navbar = () => {
                 </svg>
             </div>
             <div className={styles.navLinks}>
-                <div>Test</div>
-                <div>Test2</div>
+                <button className={styles.contactButton}>Get in touch</button>
             </div>
         </div>
     )
