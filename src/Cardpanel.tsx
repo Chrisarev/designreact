@@ -28,8 +28,8 @@ const Cardpanel = () => {
             })
         }
         if(!inView){
-            animation.start({x: '-50vw'})
-            inverseAnimation.start({x:'50vw'})
+            animation.start({x: '-30vw'})
+            inverseAnimation.start({x:'30vw'})
         }
         console.log('useEffect hook, inView = ', inView)
     },[inView])
