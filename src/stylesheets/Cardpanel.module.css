@@ -1,5 +1,6 @@
 .panel{
     background-color: #18191A;
+    overflow-x:hidden;
 }
 
 .panel h1{

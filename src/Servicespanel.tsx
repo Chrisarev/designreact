@@ -22,9 +22,9 @@ const Servicespanel = () =>{
     //is 1(element is fully scrolled), then opacity would be set to 0 
     //once element is half way scrolled thru, opacity set to 0 
     const opacity = useTransform(scrollYProgress, [0,0.5,1], [0,1,0] )
-    const translateY = useTransform(scrollYProgress, [0,0.5,0.75,1], [200,0,-300,0] )
-    const translateY2 = useTransform(scrollYProgress, [0,0.5,0.75,1], [300,0,-200,0] )
-    const translateY3 = useTransform(scrollYProgress, [0,0.5,0.75,1], [400,0,-150,0] )
+    const translateY = useTransform(scrollYProgress, [0,0.5,0.6,0.75,1], [200,0,0,-300,0] )
+    const translateY2 = useTransform(scrollYProgress, [0,0.5,0.6,0.75,1], [300,0,0,-200,0] )
+    const translateY3 = useTransform(scrollYProgress, [0,0.5,0.6,0.75,1], [400,0,0,-150,0] )
 
     return (
         <>
