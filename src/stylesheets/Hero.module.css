@@ -24,7 +24,7 @@
     opacity: 0;
     position: absolute;
     margin-top: 30vh;
-    font-size: calc(10em + 1vmin);
+    font-size: clamp(2rem, 5vw + 1.5rem, 10rem);
     font-family: 'K2D', sans-serif;
     width: 100vw;
     text-align: center;
