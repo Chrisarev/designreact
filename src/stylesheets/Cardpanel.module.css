@@ -43,9 +43,9 @@
     flex-direction: row-reverse;
 }
 .appealSVG {
-    background-color: lightcoral;
-    width: 20em;
-    height: 20em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .appealText {
