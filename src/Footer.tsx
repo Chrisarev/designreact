@@ -43,7 +43,7 @@ const Footer = () =>{
                     </div>
                     <div className={styles.jobGroup}>
                         <h2>Jobs</h2>
-                        <p>We are always looking for motivated, talented individuals to join us!</p>
+                        <p>We are always looking for talented individuals to join us!</p>
                         <button>See Jobs</button>
                     </div>
                 </div>

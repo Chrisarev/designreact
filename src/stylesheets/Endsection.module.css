@@ -20,11 +20,69 @@
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;
-    gap:4vw;
+    gap:3vw;
+}
+
+.borderWrap{
+    height: 25rem;
+    width: 20rem;
+    --bg-size: 400%;
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size: var(--bg-size);
+    background-repeat: repeat;
+    animation: move-bg 15s infinite linear;
+    padding:1px;
+    position:relative;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
 }
 
 .serviceCard{
     height: 25rem;
     width: 20rem;
-    border:1px solid gray;
+    /*border:1px solid gray;*/
+    display:flex;
+    flex-direction: column;
+}
+
+.cardHeader{
+    --bg-size: 400%;
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size: var(--bg-size);
+    background-repeat: repeat;
+    animation: move-bg 15s infinite linear;
+    color:white;
+    font-size: clamp(2rem, 1.4vw + 0.8rem, 9rem);
+    /*--bg-size: 400%;
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size: var(--bg-size);
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: move-bg 15s infinite linear;*/
+    height:15%;
+    font-family: 'K2D', sans-serif;
+    font-weight:600;
+    border-bottom:1px solid white;
+}
+
+.cardBody{
+    height:85%;
+    font-size: clamp(1rem, 0.5vw + 0.8rem, 9rem);
+    padding:1rem 0.5rem;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color:white;
+    font-weight: 500;
+    cursor:default;
+    
+}
+
+@keyframes move-bg {
+    to {
+        background-position: var(--bg-size) 0;
+    }
 }
