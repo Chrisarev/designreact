@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import Cardpanel from './Cardpanel'
 import Impactpanel from './Impactpanel'
 import Servicespanel from './Servicespanel'
+import Endsection from './Endsection'
 import Footer from './Footer'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Cardpanel />
       <Impactpanel/>
       <Servicespanel />
+      <Endsection />
       <Footer />
     </div>
   );

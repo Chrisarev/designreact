@@ -54,15 +54,6 @@
     animation: move-bg 15s infinite linear;
     color:white;
     font-size: clamp(2rem, 1.4vw + 0.8rem, 9rem);
-    /*--bg-size: 400%;
-    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    background-size: var(--bg-size);
-    background-repeat: repeat;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    animation: move-bg 15s infinite linear;*/
     height:15%;
     font-family: 'K2D', sans-serif;
     font-weight:600;
