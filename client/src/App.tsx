@@ -1,25 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Hero from './Hero'
-import Navbar from './Navbar'
-import Cardpanel from './Cardpanel'
-import Impactpanel from './Impactpanel'
-import Servicespanel from './Servicespanel'
-import Endsection from './Endsection'
-import Footer from './Footer'
+import Home from './Home'
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Cardpanel />
-      <Impactpanel/>
-      <Servicespanel />
-      <Endsection />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

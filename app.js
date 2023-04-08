@@ -1,13 +1,13 @@
-if (process.env.NODE_ENV !== "production") {
+/*if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 } ///environment variable that is either in dev or production mode
-
+*/
 const express = require('express');
 const path = require('path');
 
 const app = express();
 
-app.use(express.json())
+app.use(express.json({limit:"50mb"}))
 app.use(express.static(path.join(__dirname + '/public')))
 app.use(express.urlencoded({ extended: true })) ///allows us to get req.params 
 
