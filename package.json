@@ -10,7 +10,8 @@
     "express": "^4.18.2",
     "init": "^0.1.2",
     "nodemon": "^2.0.22",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "tsc": "^2.0.4"
   },
   "engines": {
     "node": ">= 6.9.4",
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "tsc": "./node_modules/typescript/bin/tsc",
+    "tsc": "tsc",
     "postinstall": "tsc"
   },
   "devDependencies": {
