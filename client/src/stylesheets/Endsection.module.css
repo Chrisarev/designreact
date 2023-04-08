@@ -57,7 +57,12 @@
     background-repeat: repeat;
     animation: move-bg 30s infinite linear;
 }
-
+@media (max-width: 740px){
+    .contactSection{
+        gap:0;
+        padding-bottom:1rem;
+    }
+}
 .contactPrompt{
     color:white;
     font-family: 'K2D', sans-serif;
@@ -68,6 +73,7 @@
 .contactButton{
     width:10rem;
     height:3rem;
+    background-color: white;
     color:black;
     border:none;
     font-size:calc(0.5em + 1vmin);

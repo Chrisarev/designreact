@@ -28,6 +28,7 @@
 }
 
 .inputGroup button{
+    background-color:white;
     height:3rem;
     padding:0 2.5rem;
     font-size:calc(0.5em + 1vmin);
