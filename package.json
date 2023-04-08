@@ -1,9 +1,19 @@
 {
+  "name":"designreact",
+  "version":"1.0.0",
+  "description": "",
   "main": "app.js",
+  "keywords":[],
+  "author":"",
+  "license":"ISC", 
   "dependencies": {
     "express": "^4.18.2",
     "init": "^0.1.2",
     "path": "^0.12.7"
+  },
+  "engines": {
+    "node": ">= 6.9.4",
+    "npm": ">= 4.4.0"
   },
   "scripts": {
     "start": "node app.js"
