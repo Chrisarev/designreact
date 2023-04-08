@@ -14,10 +14,6 @@
     "tsc": "^2.0.4",
     "typescript": "^5.0.4"
   },
-  "engines": {
-    "node": ">= 6.9.4",
-    "npm": ">= 4.4.0"
-  },
   "scripts": {
     "start": "node app.js",
     "postinstall": "tsc"
