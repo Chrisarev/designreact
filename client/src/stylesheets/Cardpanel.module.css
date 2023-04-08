@@ -38,7 +38,9 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap:wrap;
+    margin-bottom:3rem;
 }
+
 .appealSection:nth-of-type(2){
     flex-direction: row-reverse;
 }
