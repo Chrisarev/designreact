@@ -36,7 +36,7 @@ const Endsection = () =>{
                     <span>-Overfaced</span>
                 </div>
                 <div className={styles.review}>
-                <h2>Creative</h2>
+                <h2>Affordable</h2>
                 <p>Instead of looking for and hiring a team to develop our website we decided to go with Experience 
                     Design and couldn't have been happier with the end result!
                     </p>

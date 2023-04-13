@@ -17,7 +17,7 @@
 .reviewHolder {
     display: flex;
     gap: 2.5rem;
-    animation: infiniteScroll 130s infinite linear; 
+    animation: infiniteScroll 60s infinite linear; 
     padding-bottom:10rem;
 }
 
@@ -33,11 +33,11 @@
 .review h2{
     font-family: 'K2D', sans-serif;
     font-weight: 700;
-   font-size: clamp(1.5rem, 1.2vw + 0.5rem, 6rem);
+    font-size: clamp(1.5rem, 1.2vw + 0.5rem, 6rem);
 }
 
 .review p{
-    font-size: clamp(1rem, 0.7vw + 0.5rem, 3rem);
+    font-size: clamp(1rem, 0.5vw + 0.5rem, 3rem);
     padding:0 1rem;
 }
 
@@ -89,7 +89,7 @@
     0% {
         transform:translateX(5rem);
     }50%{
-        transform: translateX(-55rem);
+        transform: translateX(-20rem);
     }100%{
         transform:translateX(5rem);
     }
