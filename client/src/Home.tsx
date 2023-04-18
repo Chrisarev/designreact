@@ -5,13 +5,13 @@ import Impactpanel from './Impactpanel'
 import Servicespanel from './Servicespanel'
 import Endsection from './Endsection'
 import Footer from './Footer'
-
+import Hero2 from './Hero2'
 const Home = () =>{
 
     return (
         <>
           <Navbar />
-          <Hero />
+          <Hero2 />
           <Cardpanel />
           <Impactpanel />
           <Servicespanel />
