@@ -1,12 +1,8 @@
 import styles from './stylesheets/Hero2.module.css' 
 import {useScroll, useTransform, motion} from 'framer-motion'
 import {useRef, useState, useEffect} from 'react'
-import { useSyncExternalStore } from 'react';
 
 const Hero2 = () =>{
-    const mobileScaleValue = [1,6,10];
-    const desktopScaleValue = [1,2,4];
-
     /* Gets window height and width*/
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
@@ -14,10 +10,12 @@ const Hero2 = () =>{
           width,
           height
         };
-      }
-    
-      /* Window dimensions state that updates everytime the window is resized*/
+      } 
+      
+    /* windowDimensions state that holds window width and height*/
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    /* This useEffect activates whenever window is resized */
     useEffect(() => {
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
@@ -25,8 +23,13 @@ const Hero2 = () =>{
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+    
+    /* Mobile version scales faster than desktop version in order to cover proportionately taller screens*/
+    const mobileScaleValue = [1,6,10];
+    const desktopScaleValue = [1,2,4];  
 
-    function getScaleValue() {
+    /* If window width is > 800px returns a scale value for desktops to be used in useTransform*/
+    function getScaleValue() {  
         if(windowDimensions.width>800){
             return desktopScaleValue;
         }else{
@@ -43,10 +46,11 @@ const Hero2 = () =>{
         //Any range between those intersections is where scroll progress is applied
         offset: ["start start", "end start"]
     })
-
-    const translateY = useTransform(scrollYProgress, [0,0.5,1], [200,-800,-1500] )
-    /*const translateX = useTransform(scrollYProgress, [0,0.5,1], [0,-1000,-1500])*/
+    
+    const translateY = useTransform(scrollYProgress, [0,0.5,1], [200,-800,-1500])
+    ///scale varies depending on screen size due to getScaleValue() 
     const scale = useTransform(scrollYProgress, [0,0.5,1], getScaleValue())
+
     return (
         <>
         <div className={styles.firstLoadPanel}>

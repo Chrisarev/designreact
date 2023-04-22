@@ -87,8 +87,8 @@
     -webkit-user-select: none; /* Safari */
     animation:fadeInFromTop 1s forwards;
     animation-delay:3.3s;
-    
 }
+
 .header span{
     --bg-size: 400%;
     background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);

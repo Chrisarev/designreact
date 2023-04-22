@@ -30,7 +30,7 @@ const Servicespanel = () => {
                     <div className={styles.serviceCard}>
                         <div className={styles.cardHeader}>Website design</div>
                         <div className={styles.cardBody}>
-                            Create a simple, clean user experience guided by optimizing user interactions, 
+                            We create a simple, clean user experience guided by optimizing user interactions, 
                             designing a scalable design system, and incorporating cutting edge technology.
                         </div>
                     </div>

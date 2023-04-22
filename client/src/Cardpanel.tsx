@@ -81,7 +81,7 @@ const Cardpanel = () => {
                             </svg>
                         </div>
                         <div className={styles.appealText}>
-                            Custom made graphics and animations ensure that your users are entertained when learning about your brand.
+                            Custom made graphics and animations ensure that your users are engaged when learning about your brand.
                         </div>
                     </motion.div>
                 </div>

@@ -16,7 +16,7 @@
 .panel{
     max-width:100vw;
     max-height:100vh;
-    background-color:#FFEBEB;
+    background-color:#f5fffa ;
     padding-top:5rem;
     overflow-x:hidden;
     overflow-y:hidden;
@@ -85,9 +85,12 @@
         transform:translateY(0);
     }20%{
         transform: translateY(-100vh);
+    }21%{
+        visibility:hidden;
     }
 	50% {
 		background-position: 100% 50%;
+        visibility:hidden;
 	}100% {
         transform: translateY(-100vh);
 		background-position: 0% 50%;
