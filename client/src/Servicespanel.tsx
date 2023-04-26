@@ -19,7 +19,7 @@ const Servicespanel = () => {
     const translateY = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [200, 0, 0, -150, 0])
     const translateY2 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [300, 0, 0, -200, 0])
     const translateY3 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [400, 0, 0, -300, 0])
-    const scale = useTransform(scrollYProgress,  [0, 0.5, 1], [0.9, 1, 0.9])
+    /*const scale = useTransform(scrollYProgress,  [0, 0.5, 1], [0.9, 1, 0.9])*/
 
     return (
         <>
