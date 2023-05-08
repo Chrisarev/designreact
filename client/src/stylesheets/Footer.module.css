@@ -15,9 +15,13 @@
     display:flex;
     flex-wrap:wrap;
     align-items: flex-start;
-    gap:3rem;
 }
+.inputGroup form{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
 
+}
 .inputGroup input{
     padding:1rem 1rem;
     padding-right:5rem;
@@ -44,6 +48,14 @@
     animation: move-bg 8s infinite linear;
     color:white;
     cursor:pointer;
+}
+
+.submittedClass{
+    --bg-size: 400%;
+    background-image: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size: var(--bg-size);
+    background-repeat: repeat;
+    animation: move-bg 8s infinite linear;
 }
 
 @keyframes move-bg {

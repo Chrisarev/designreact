@@ -1,9 +1,14 @@
 import styles from './stylesheets/Footer.module.css' 
-
+import { useState } from 'react'
 const Footer = () =>{
 
-    const handleClick = () =>{
-        console.log('handled')
+    const [subButtonText, setSubButtonText] = useState('Subscribe');
+    const [subState, setSubState] = useState(false); 
+
+    const handleClick = (e:any) =>{
+        e.preventDefault();
+        setSubButtonText('Subscribed✓');
+        setSubState(true); 
     }
 
     return (
@@ -11,8 +16,10 @@ const Footer = () =>{
             <div className={styles.panel}>
                 <h1 className={styles.footerTitle}>Get updates from us</h1>
                 <div className={styles.inputGroup}>
-                    <input type="text" placeholder='Email Address'></input>
-                    <button onClick={handleClick}>Subscribe</button>
+                    <form onSubmit={handleClick}>
+                        <input readOnly={subState ? true: false }style={{color: subState ? 'gray': 'white'}}type="email" required placeholder='Email Address'></input>
+                        <button>{subButtonText}</button>
+                    </form>
                 </div>
                 <div className={styles.linksHolder}>
                     <div className={styles.linkGroup}>

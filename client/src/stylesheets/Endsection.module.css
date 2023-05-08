@@ -57,12 +57,14 @@
     background-repeat: repeat;
     animation: move-bg 30s infinite linear;
 }
-@media (max-width: 740px){
+
+@media (max-width: 500px){
     .contactSection{
         gap:0;
-        padding-bottom:1rem;
+        padding:1rem 0; 
     }
 }
+
 .contactPrompt{
     color:white;
     font-family: 'K2D', sans-serif;

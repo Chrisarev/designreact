@@ -1,7 +1,17 @@
 import styles from './stylesheets/Navbar.module.css'
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
 
+    const [popUpState, setpopUpState] = useState(false);
+    const handlePopUpState = () =>{
+        if(popUpState==true){
+            setpopUpState(false); 
+        }else{
+            setpopUpState(true); 
+        }
+    }
+    
     return (
         <div className={styles.navbar}>
             <div className={styles.navIcon}>
@@ -23,9 +33,10 @@ const Navbar = () => {
                     </defs>
                 </svg>
             </div>
-            <div className={styles.navLinks}>
+
+            {/*<div className={styles.navLinks}>
                 <button className={styles.contactButton}>Get in touch</button>
-            </div>
+            </div>*/}
         </div>
     )
 }

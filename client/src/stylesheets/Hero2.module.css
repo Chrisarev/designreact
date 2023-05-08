@@ -25,6 +25,15 @@
     background-position:center;*/
 }
 
+.buffer{
+    position:relative;
+    bottom:0;
+    margin:0;
+    background-color:#18191A;
+    height:3rem;
+    width:100vw;
+}
+
 .backgroundCircle{
     position:relative; 
     z-index:7;
@@ -37,7 +46,9 @@
     background-image: radial-gradient(circle, #18191A 0%, #18191A 100%);
     background-size: var(--bg-size);
     background-repeat: repeat;    border-radius:100%; 
-    animation: move-bg 15s infinite linear;
+    animation: circleAppear 5s linear forwards; 
+    animation-delay: 2s;
+    /*animation: move-bg 15s infinite linear;*/
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -45,7 +56,13 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
 }
-
+@keyframes circleAppear {
+    0%{
+        opacity:0;
+    }50%{
+        opacity:1;
+    }
+}
 .introText {
     margin:0;
     padding:0;
@@ -83,16 +100,18 @@
 		background-position: 0% 50%;
 	}14%{
         transform:translateY(0);
+        opacity:1;
     }20%{
-        transform: translateY(-100vh);
+        /*transform: translateY(-100vh);*/
     }21%{
         visibility:hidden;
+        opacity:0;
     }
 	50% {
 		background-position: 100% 50%;
         visibility:hidden;
 	}100% {
-        transform: translateY(-100vh);
+        /*transform: translateY(-100vh);*/
 		background-position: 0% 50%;
         visibility:hidden;
 	}

@@ -11,7 +11,7 @@ const Hero2 = () =>{
           height
         };
       } 
-      
+    
     /* windowDimensions state that holds window width and height*/
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
@@ -23,7 +23,7 @@ const Hero2 = () =>{
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-    
+
     /* Mobile version scales faster than desktop version in order to cover proportionately taller screens*/
     const mobileScaleValue = [1,6,10];
     const desktopScaleValue = [1,2,4];  
@@ -63,6 +63,7 @@ const Hero2 = () =>{
            <motion.div className={styles.backgroundCircle} 
             style={{scale,translateY}}
            ></motion.div>
+           <div className={styles.buffer}>VUFFER</div>
         </div>
         </>
     )

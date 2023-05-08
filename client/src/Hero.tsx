@@ -1,7 +1,7 @@
 import styles from './stylesheets/Hero.module.css' 
 
 const Hero = () =>{
-
+    
 
     return (
         <>
