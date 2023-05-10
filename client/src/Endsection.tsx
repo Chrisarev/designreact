@@ -1,8 +1,11 @@
 import styles from './stylesheets/Endsection.module.css' 
-
+import { useNavigate } from 'react-router-dom';
 const Endsection = () =>{
-
-
+    const navigate = useNavigate();
+    const handleContact = () =>{
+        navigate('/contact')
+    }
+    
     return (
         <div className={styles.panel}>
             <h1 className={styles.header}>Our team is:</h1>
@@ -65,8 +68,8 @@ const Endsection = () =>{
                 </div>
             </div>
             <div className={styles.contactSection}>
-            <h2 className={styles.contactPrompt}>Get a quote today!</h2>
-            <button className={styles.contactButton}>Contact Us</button>
+                <h2 className={styles.contactPrompt}>Get a quote today!</h2>
+                <button className={styles.contactButton} onClick={handleContact} >Contact Us</button>
             </div>
         </div>
     )

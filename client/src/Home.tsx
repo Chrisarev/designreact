@@ -6,18 +6,21 @@ import Servicespanel from './Servicespanel'
 import Endsection from './Endsection'
 import Footer from './Footer'
 import Hero2 from './Hero2'
+import {motion} from 'framer-motion'
+
 const Home = () =>{
 
+    
     return (
-        <>
-          <Navbar />
+        <motion.div initial={{opacity:1}}  exit={{opacity:0}}>
+          <Navbar /> 
           <Hero2 />
           <Cardpanel />
           <Impactpanel />
           <Servicespanel />
           <Endsection />
           <Footer />
-        </>
+        </motion.div>
     )
 }
 

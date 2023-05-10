@@ -1,0 +1,49 @@
+
+.panel{
+    width:100vw;
+    height:100vh;
+    background-color:#18191a;
+    display:flex;
+}
+
+.infoSection{
+    background-color: #18191a;
+    width:40%;
+}
+
+.formSection{
+    padding-top:5rem;
+    background-color:#18191a;
+    width:60%;
+    display:flex;
+    justify-content:center;
+}
+
+.contactForm{
+    margin-top:5rem;
+    background-color:white;
+    width:80%;
+    height:50rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactForm h1{
+    width:80%;
+    padding-left:10%;
+    text-align:left;
+}
+
+.contactForm form{
+    width:70%;
+}
+
+.contactForm form label{
+    text-align: left;
+    padding-left:1rem;
+}
+
+.inputGroup{
+    display:flex;
+    flex-direction: column;
+}
