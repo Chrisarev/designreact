@@ -1,20 +1,17 @@
 import styles from './stylesheets/Navbar.module.css'
 import { useEffect, useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
-
-    const [popUpState, setpopUpState] = useState(false);
-    const handlePopUpState = () =>{
-        if(popUpState==true){
-            setpopUpState(false); 
-        }else{
-            setpopUpState(true); 
-        }
+    let navigate = useNavigate();
+    const handleNavigate = () =>{
+        navigate('/contact')
     }
     
     return (
         <div className={styles.navbar}>
             <div className={styles.navIcon}>
+                <Link to="/">
                 <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Frame 1" clip-path="url(#clip0_1_2)">
                         <g id="Group 1">
@@ -32,11 +29,12 @@ const Navbar = () => {
                         </clipPath>
                     </defs>
                 </svg>
+                </Link>
             </div>
 
-            {/*<div className={styles.navLinks}>
-                <button className={styles.contactButton}>Get in touch</button>
-            </div>*/}
+            <div className={styles.navLinks}>
+                <button onClick={handleNavigate} className={styles.contactButton}>Get in touch</button>
+            </div>
         </div>
     )
 }

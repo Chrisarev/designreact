@@ -63,7 +63,7 @@ const Hero2 = () =>{
            <motion.div className={styles.backgroundCircle} 
             style={{scale,translateY}}
            ></motion.div>
-           <div className={styles.buffer}>VUFFER</div>
+           <div className={styles.buffer}></div>
         </div>
         </>
     )
