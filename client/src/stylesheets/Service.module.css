@@ -13,6 +13,7 @@
     font-weight: 700;
     cursor:default;
     user-select: none;
+    padding-top:2rem;
 }
 
 .cardHolder{

@@ -4,6 +4,10 @@ import Navbar from './Navbar'
 
 const Contact = () => {
 
+    const handleSubmit = (e:any) =>{
+        e.preventDefault(); 
+        console.log('SUBMITTED')
+    }
 
     return (
         <div className={styles.panel}>
@@ -46,13 +50,13 @@ const Contact = () => {
             <div className={styles.formSection}>
                 <motion.div initial={{ opacity: 0, y: -200 }} animate={{ opacity: 1, y: 0, transition: { delay: 0.4 } }} className={styles.contactForm}>
                     <h1>Contact Us</h1>
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <div className={styles.inputGroup}>
                             <label htmlFor="name">Your Name:</label>
                             <input type="text" name='name' />
                         </div>
                         <div className={styles.inputGroup}>
-                            <label htmlFor="phone">Phone Number</label>
+                            <label htmlFor="phone">Phone Number:</label>
                             <input type="tel" />
                         </div>
                         <div className={styles.inputGroup}>
