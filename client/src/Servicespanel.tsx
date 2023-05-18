@@ -16,11 +16,11 @@ const Servicespanel = () => {
         offset: ["start end", "end start"]
     })
 
-    const translateY = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [200, 0, 0, -150, 0])
-    const translateY2 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [300, 0, 0, -200, 0])
-    const translateY3 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [400, 0, 0, -300, 0])
+    const translateY = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [200, 0, 0, -250, 0])
+    const translateY2 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [300, 0, 0, -350, 0])
+    const translateY3 = useTransform(scrollYProgress, [0, 0.5, 0.6, 0.75, 1], [400, 0, 0, -450, 0])
     /*const scale = useTransform(scrollYProgress,  [0, 0.5, 1], [0.9, 1, 0.9])*/
-
+    
     return (
         <>
             <div ref={targetRef} className={styles.panel}>
